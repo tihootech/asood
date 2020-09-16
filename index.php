@@ -8,11 +8,6 @@
 </head>
 <body class="opening hide-UI view-3D zoom-large data-close controls-close" dir="rtl">
 
-    <div id="controls">
-        <label class="set-view">
-            <input type="checkbox">
-        </label>
-    </div>
     <div id="universe" class="scale-stretched">
         <div id="galaxy">
             <div id="solar-system" class="earth">
