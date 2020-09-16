@@ -1,6 +1,6 @@
 $(document).on('click', '.kashf', function () {
     $.ajax({
-        url: "/response.php",
+        url: "response.php",
         data : {
             type : 'kashf'
         },
