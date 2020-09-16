@@ -379,13 +379,13 @@ body {
   font-size: 22em; }
 
 .scale-stretched #mercury .planet {
-  font-size: 4em; }
+  font-size: 5em; }
 
 .scale-stretched #venus .planet {
-  font-size: 4.5em; }
+  font-size: 6em; }
 
 .scale-stretched #earth .planet {
-  font-size: 5em; }
+  font-size: 6em; }
 
 .scale-stretched #earth .moon {
   font-size: 2em; }
@@ -394,7 +394,7 @@ body {
   font-size: 6em; }
 
 .scale-stretched #asood .planet {
-  font-size: 11em; }
+  font-size: 13em; }
 
 .scale-stretched #jupiter .planet {
   font-size: 12em; }
@@ -483,22 +483,22 @@ body {
 
 /* --------------------------------------------------------------------------- stretched orbits */
 .scale-stretched #mercury.orbit {
-  width: 32em;
-  height: 32em;
-  margin-top: -16em;
-  margin-left: -16em; }
+  width: 35em;
+  height: 35em;
+  margin-top: -17.5em;
+  margin-left: -17.5em; }
 
 .scale-stretched #venus.orbit {
-  width: 50em;
-  height: 50em;
-  margin-top: -25em;
-  margin-left: -25em; }
+  width: 60em;
+  height: 60em;
+  margin-top: -30em;
+  margin-left: -30em; }
 
 .scale-stretched #earth.orbit {
-  width: 70em;
-  height: 70em;
-  margin-top: -35em;
-  margin-left: -35em; }
+  width: 85em;
+  height: 85em;
+  margin-top: -42.5em;
+  margin-left: -42.5em; }
 
 .scale-stretched #earth .orbit {
   width: 6em;
@@ -507,40 +507,40 @@ body {
   margin-left: -3em; }
 
 .scale-stretched #mars.orbit {
-    width: 90em;
-    height: 90em;
-    margin-top: -45em;
-    margin-left: -45em; }
+    width: 105em;
+    height: 105em;
+    margin-top: -52.5em;
+    margin-left: -52.5em; }
 
 .scale-stretched #asood.orbit {
-  width: 90em;
-  height: 90em;
-  margin-top: -45em;
-  margin-left: -45em; }
+  width: 125em;
+  height: 125em;
+  margin-top: -62.5em;
+  margin-left: -62.5em; }
 
 .scale-stretched #jupiter.orbit {
-  width: 115em;
-  height: 115em;
-  margin-top: -57.5em;
-  margin-left: -57.5em; }
-
-.scale-stretched #saturn.orbit {
   width: 150em;
   height: 150em;
   margin-top: -75em;
   margin-left: -75em; }
 
+.scale-stretched #saturn.orbit {
+  width: 185em;
+  height: 185em;
+  margin-top: -92.5em;
+  margin-left: -92.5em; }
+
 .scale-stretched #uranus.orbit {
-  width: 186em;
-  height: 186em;
-  margin-top: -93em;
-  margin-left: -93em; }
+  width: 220em;
+  height: 220em;
+  margin-top: -110em;
+  margin-left: -110em; }
 
 .scale-stretched #neptune.orbit {
-  width: 210em;
-  height: 210em;
-  margin-top: -105em;
-  margin-left: -105em; }
+  width: 250em;
+  height: 250em;
+  margin-top: -125em;
+  margin-left: -125em; }
 
 /* --------------------------------------------------------------------------- scaled orbits */
 /* --------------------------------------------------------------------------- distance scale orbits */
@@ -1276,6 +1276,7 @@ h1 {
     bottom: 90px;
     z-index: 141;
     width: 100%;
+    display: none;
 }
 
     /* display none */
@@ -1285,15 +1286,18 @@ h1 {
     z-index: 115;
     width: 100%;
     text-align: center;
-    display: none;
 }
 .point {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    padding: 32px;
+    width: 81.6px;
+    height: 81.6px;
     margin: 5px;
     border-radius: 10px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 15px;
 }
 
 .point.active {
@@ -1322,7 +1326,6 @@ h1 {
     position: absolute;
     bottom: 0px;
     right: 0px;
-
 }
 
 .bg {
