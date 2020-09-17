@@ -8,6 +8,7 @@
 </head>
 <body class="opening hide-UI view-3D zoom-large data-close controls-close" dir="rtl">
 
+
     <div id="universe" class="scale-stretched">
         <div id="galaxy">
             <div id="solar-system" class="earth">
@@ -81,7 +82,7 @@
         <button class="kashf"> کشف آسود </button>
     </div>
 
-    <div class="points">
+    <div class="points d-none">
 
         <div class="point active">
             کد تخفیف 50 هزار تومانی
@@ -120,7 +121,7 @@
     </div>
 
     <div class="infoo">
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" id="winner">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" id="winner">
             <div class="card-header bg">
                 <div class="card-body bgc"> آسود </div>
                 <p class="card-text">
@@ -134,7 +135,7 @@
                 <h4 id="code">  </h4>
             </div>
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto  ml-auto mb-auto" style="max-width: 22rem;" data-info="earth">
+        <div class="card informations bg text-center collapse ml-auto  ml-auto mb-auto" style="max-width: 22rem;" data-info="earth">
             <div class="card-header bg">
                 <div class="card-body bgc"> زمین </div>
                 <p class="card-text">
@@ -145,7 +146,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="mars">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="mars">
             <div class="card-header bg">
                 <div class="card-body bgc"> مریخ </div>
                 <p class="card-text">
@@ -155,7 +156,7 @@
                  <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
             </div>
         </div>
-        <div class="card informations bg collapse text-center mb-3 ml-auto " style="max-width: 22rem;" data-info="saturn">
+        <div class="card informations bg collapse text-center ml-auto " style="max-width: 22rem;" data-info="saturn">
             <div class="card-header bg">
                 <div class="card-body bgc"> زحل </div>
                 <p class="card-text">
@@ -165,7 +166,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="venus">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="venus">
             <div class="card-header bg">
                 <div class="card-body bgc"> زهره </div>
                 <p class="card-text">
@@ -175,7 +176,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="uranus">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="uranus">
             <div class="card-header bg">
                 <div class="card-body bgc"> اورانوس </div>
                 <p class="card-text">نکته جالب در مورد سیاره اورانوس این است که شما نمیتوانید روی اورانوس بایستید، هسته‌ی جامد و سنگی دارد اما توپ بزرگی است که بخش اصلی آن از گازهلی هیدروژن وهلیوم تشکیل شده‌است.
@@ -185,7 +186,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">>
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="jupiter">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="jupiter">
             <div class="card-header bg">
                 <div class="card-body bgc"> مشتری </div>
                 <p class="card-text">بزرگ‌ترین قمر سیاره‌ی مشتری اقیانوسی نمکی دارد که آب آن از آب‌های موجود بر کره‌ی زمین بیشتر است.
@@ -195,7 +196,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="neptune">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="neptune">
             <div class="card-header bg">
                 <div class="card-body bgc"> نپتون </div>
                 <p class="card-text">
@@ -205,7 +206,7 @@
             <img class="circlephoto" src="photos/circle.png" alt="circle">
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
-        <div class="card informations bg text-center collapse mb-3 ml-auto " style="max-width: 22rem;" data-info="mercury">
+        <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="mercury">
             <div class="card-header bg">
                 <div class="card-body bgc"> عطارد </div>
                 <p class="card-text">
@@ -216,6 +217,11 @@
             <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
     </div>
+
+    <div class="image p-4">
+        <img class="logo" src="photos/logo.svg" alt="logo" width="45px" height="45px">
+    </div>
+
 
     <script src='js/jquery.min.js'></script>
     <script src="js/popper.min.js"></script>
