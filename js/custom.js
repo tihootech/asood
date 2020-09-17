@@ -11,8 +11,9 @@ $(document).on('click', '.kashf:first', function () {
             var data = JSON.parse(result);
             if (data['result']) {
 
+                $('[data-info], #winner').hide();
+
                 var planet = data['planet'];
-                $('[data-info]').hide();
                 if (planet == 'asood') {
                     $('#winner #code').html(data['code']);
                     $('#winner').slideDown();
