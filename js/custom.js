@@ -12,11 +12,11 @@ $(document).on('click', '.kashf:first', function () {
             if (data['result']) {
 
                 var planet = data['planet'];
+                $('[data-info]').hide();
                 if (planet == 'asood') {
                     $('#winner #code').html(data['code']);
                     $('#winner').slideDown();
                 }else {
-                    $('[data-info]').hide();
                     $('[data-info='+planet+']').slideDown();
                 }
 

@@ -125,7 +125,7 @@
     <div class="infoo">
         <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" id="winner">
             <div class="card-header bg">
-                <div class="card-body bgc"> <h4 class="m-0 p-0">آسود</h4> </div>
+                <div class="card-body bgc"> آسود </div>
                 <p class="card-text">
                     تبریک میگوییم
                     شما برنده شده اید برای دریافت جایزه
@@ -191,7 +191,7 @@
                 </p>
             </div>
             <img class="circlephoto" src="photos/circle.png" alt="circle">
-            <img class="arrowphoto" src="photos/arrow.png" alt="arrow">>
+            <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
         </div>
         <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" data-info="jupiter">
             <div class="card-header bg">
