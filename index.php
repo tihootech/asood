@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Asood</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="opening hide-UI view-3D zoom-large data-close controls-close" dir="rtl">
 
@@ -79,7 +80,8 @@
     </div>
 
     <div class="kashfasood text-center">
-        <button class="kashf"> کشف آسود </button>
+        <a class="kashf mx-1" href="#"> کشف آسود </a>
+        <a class="kashf mx-1" href="#"> پاک کردن حافظه </a>
     </div>
 
     <div class="points d-none">
@@ -123,7 +125,7 @@
     <div class="infoo">
         <div class="card informations bg text-center collapse ml-auto " style="max-width: 22rem;" id="winner">
             <div class="card-header bg">
-                <div class="card-body bgc"> آسود </div>
+                <div class="card-body bgc"> <h4 class="m-0 p-0">آسود</h4> </div>
                 <p class="card-text">
                     تبریک میگوییم
                     شما برنده شده اید برای دریافت جایزه
@@ -132,7 +134,12 @@
                 <hr>
                 <img class="circlephoto" src="photos/circle.png" alt="circle">
                 <img class="arrowphoto" src="photos/arrow.png" alt="arrow">
-                <h4 id="code">  </h4>
+                <h5 class="code-box">
+                    <span id="code"> 56466465 </span>
+                    <a href="#" data-copy="#code">
+                        <i class="material-icons float-right">content_copy</i>
+                    </a>
+                </h5>
             </div>
         </div>
         <div class="card informations bg text-center collapse ml-auto  ml-auto mb-auto" style="max-width: 22rem;" data-info="earth">
@@ -219,7 +226,7 @@
     </div>
 
     <div class="image p-4">
-        <img class="logo" src="photos/logo.svg" alt="logo" width="45px" height="45px">
+        <img class="logo" src="photos/logo.svg" alt="logo" width="90px" height="90px">
     </div>
 
 

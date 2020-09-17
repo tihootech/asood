@@ -1,17 +1,17 @@
 
 @font-face {
     font-family: 'Dirooz';
-    src: url(fonts/Dirooz.ttf);
+    src: url(../fonts/Dirooz.ttf);
 }
 
 @font-face {
     font-family: 'Dinar';
-    src: url(fonts/Dinar.ttf);
+    src: url(../fonts/Dinar.ttf);
 }
 
 body {
     font-family: 'Dirooz' !important;
-    background: url(photos/back.png) no-repeat center center fixed;
+    background: url(../photos/back.png) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -144,6 +144,25 @@ body {
   border: 0.07em solid rgba(160, 147, 130, 0.5);
   box-sizing: border-box;
   box-sizing: border-box; }
+
+/* --------------------------------------------------------------------------- custom */
+
+.code-box {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 25px;
+    color: #110452;
+}
+
+.code-box a {
+    color: inherit;
+}
+
+.card-text {
+    font-size: 1.5em;
+    padding: 20px 0;
+    line-height: 1.5em;
+}
 
 /* --------------------------------------------------------------------------- planets index */
 #mercury {
@@ -1231,38 +1250,38 @@ h1 {
 /* --------------------------------------------------------------------------- images */
 
 #sun {
-  background-image: url(photos/sun.png); }
+  background-image: url(../photos/sun.png); }
 
 #mercury .planet {
-  background-image: url(photos/atarod.png); }
+  background-image: url(../photos/atarod.png); }
 
 #venus .planet {
-  background-image: url(photos/zohre.png); }
+  background-image: url(../photos/zohre.png); }
 
 #earth .planet {
-  background-image: url(photos/zamin.png); }
+  background-image: url(../photos/zamin.png); }
 
 #earth .moon {
   background-color: white; }
 
 #mars .planet {
-  background-image: url(photos/mars.png); }
+  background-image: url(../photos/mars.png); }
 
 #asood .planet {
-  background-image: url(photos/asood.png);
+  background-image: url(../photos/asood.png);
  }
 
 #jupiter .planet {
-  background-image: url(photos/moshtary.png); }
+  background-image: url(../photos/moshtary.png); }
 
 #saturn .planet {
-  background-image: url(photos/saturn.png); }
+  background-image: url(../photos/saturn.png); }
 
 #uranus .planet {
-  background-image: url(photos/oranos.png); }
+  background-image: url(../photos/oranos.png); }
 
 #neptune .planet {
-  background-image: url(photos/neptone.png); }
+  background-image: url(../photos/neptone.png); }
 
 
 
@@ -1275,7 +1294,6 @@ h1 {
     bottom: 90px;
     z-index: 141;
     width: 100%;
-    display: none;
 }
 
     /* display none */
@@ -1311,6 +1329,11 @@ h1 {
     background-color: white;
     padding: 10px 25px;
     font-size: 1.5em;
+}
+
+.kashf:hover {
+    text-decoration: none;
+    color: #3c00cb;
 }
 
 /* informashons */

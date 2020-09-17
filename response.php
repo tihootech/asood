@@ -7,12 +7,18 @@ include 'functions.php';
 if (isset($_GET['type'])) {
 
     $type = $_GET['type'];
+    $ip = clientIP();
+
+    if ($type == 'clear') {
+        $query = "DELETE FROM `people` WHERE `ip`='$ip'";
+        $result = mysqli_query($conn, $query);
+        echo $result;
+    }
 
     if ($type == 'kashf') {
-        $ip = clientIP();
 
         // چک کردن اینکه شخصی با این آیپی تو 24ساعت گذشته کشف آسود کرده یا نه
-        $query = "SELECT * FROM `people` WHERE `ip`='$ip' AND `date` >= now() - INTERVAL 1 DAY";
+        $query = "SELECT * FROM `people` WHERE `ip`='$ip' AND `date` >= NOW() - INTERVAL 1 DAY";
         $result = mysqli_query($conn, $query);
         $person = mysqli_fetch_assoc($result);
 

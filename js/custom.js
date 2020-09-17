@@ -1,4 +1,4 @@
-$(document).on('click', '.kashf', function () {
+$(document).on('click', '.kashf:first', function () {
     $.ajax({
         url: "response.php",
         data : {
@@ -16,6 +16,7 @@ $(document).on('click', '.kashf', function () {
                     $('#winner #code').html(data['code']);
                     $('#winner').slideDown();
                 }else {
+                    $('[data-info]').hide();
                     $('[data-info='+planet+']').slideDown();
                 }
 
@@ -29,3 +30,49 @@ $(document).on('click', '.kashf', function () {
         }
     });
 });
+
+$(document).on('click', '.kashf:last', function () {
+    $.ajax({
+        url: "response.php",
+        data : {
+            type : 'clear'
+        },
+        error : function (e) {
+            console.log(e);
+        },
+        success: function(result){
+            if (result) {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'اطلاعات قبلی پاک شدند.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        }
+    });
+});
+
+
+$(document).on('click', '[data-copy]', function () {
+    var target = $($(this).data('copy'));
+    var value = target.text();
+    textToClipboard(value);
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'کد مورد نظر کپی شد.',
+        showConfirmButton: false,
+        timer: 1500
+    });
+});
+
+function textToClipboard (text) {
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+}
